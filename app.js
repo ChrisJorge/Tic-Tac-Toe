@@ -29,7 +29,7 @@ let hasBeenClicked = (placement) => {
         placePiece(placement)
     }
     else{
-        console.log('already clicked')
+        alert('Space already clicked, choose another one')
     }
 
 }
