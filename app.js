@@ -11,6 +11,18 @@ let boardCoodinates = {
     nine: true
 }
 
+let winCondition = {
+    one: "1",
+    two: "2",
+    three: "3",
+    four: "4",
+    five: "5",
+    siz: "6",
+    seven: "7",
+    eight: "8",
+    nine: "9"
+}
+console.log(winCondition['one'])
 
 for (i = 0; i < document.querySelectorAll('button').length; i++)
 {
@@ -74,11 +86,21 @@ let placePiece = (placement) => {
     if (turn % 2 === 0){
         console.log('inside turn % 2 === 0')
         peice.innerHTML = "X"
+        winCondition[`${placement}`] = 'X'
         turn ++;
+        winCheck();
     }
     else{
         peice.innerHTML = 'O'
+        winCondition[`${placement}`] = 'O'
         turn ++
+        winCheck();
     }
 }
 
+let winCheck =() => {
+    if (winCondition['one'] === winCondition['two'] && winCondition['one'] === winCondition['three'])
+    {
+        alert(`${winCondition['one']} wins`)
+    }
+}
