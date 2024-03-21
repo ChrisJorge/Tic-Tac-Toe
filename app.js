@@ -17,7 +17,7 @@ let winCondition = {
     three: "3",
     four: "4",
     five: "5",
-    siz: "6",
+    six: "6",
     seven: "7",
     eight: "8",
     nine: "9"
@@ -99,8 +99,13 @@ let placePiece = (placement) => {
 }
 
 let winCheck =() => {
+
     if (winCondition['one'] === winCondition['two'] && winCondition['one'] === winCondition['three'])
     {
-        alert(`${winCondition['one']} wins`)
+        alert(`${winCondition['one']} wins`);
+    }
+    else if(winCondition['four'] === winCondition['five'] && winCondition['four'] === winCondition['six'])
+    {
+        alert(`${winCondition['four']} wins`);
     }
 }
