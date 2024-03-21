@@ -1,3 +1,4 @@
+
 let turn = 0
 let won = false
 let boardCoodinates = {
@@ -122,6 +123,21 @@ let winCheck =() => {
         won = true;
     }
     else if(winCondition['three'] === winCondition['five'] && winCondition['three'] === winCondition['seven'])
+    {
+        alert(`${winCondition['three']} wins`);
+        won = true;
+    }
+    else if(winCondition['one'] === winCondition['four'] && winCondition['one'] === winCondition['seven'])
+    {
+        alert(`${winCondition['one']} wins`);
+        won = true;
+    }
+    else if(winCondition['two'] === winCondition['five'] && winCondition['two'] === winCondition['eight'])
+    {
+        alert(`${winCondition['two']} wins`);
+        won = true;
+    }
+    else if(winCondition['three'] === winCondition['six'] && winCondition['three'] === winCondition['nine'])
     {
         alert(`${winCondition['three']} wins`);
         won = true;

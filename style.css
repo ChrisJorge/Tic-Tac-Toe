@@ -9,6 +9,7 @@
     margin: 1em;
     
 }
+
 .board{
     display: grid;
     border: solid black 3px;
@@ -23,6 +24,4 @@ button{
     background-color: white;
     color: red;
     font-size: 40px;
-
 }
-
