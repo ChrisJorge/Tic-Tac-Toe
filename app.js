@@ -129,5 +129,17 @@ let winCheck =() => {
 
     if (won !== true && turn > 8){
         alert('Tie')
-    }    
+        disabled()
+    }
+    else if(won === true){
+        disabled()
+    }  
+}
+
+
+let disabled = () => {
+    for(i = 0; i < document.querySelectorAll('button').length; i++){
+        let btn = document.querySelectorAll('button')[i]
+        btn.disabled = true
+    }
 }
