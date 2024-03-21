@@ -7,6 +7,7 @@
     display: flex;
     justify-content: center;
     margin: 1em;
+    
 }
 .board{
     display: grid;
@@ -15,4 +16,13 @@
     grid-template-rows: 1fr 1fr 1fr;
     width: 80%;
     height: 70vh;
+  
 }
+
+button{
+    background-color: white;
+    color: red;
+    font-size: 40px;
+
+}
+
