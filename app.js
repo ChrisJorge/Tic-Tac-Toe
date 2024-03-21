@@ -116,4 +116,8 @@ let winCheck =() => {
     {
         alert(`${winCondition['one']} wins`);
     }
+    else if(winCondition['three'] === winCondition['five'] && winCondition['three'] === winCondition['seven'])
+    {
+        alert(`${winCondition['three']} wins`);
+    }
 }
