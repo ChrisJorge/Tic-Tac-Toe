@@ -23,7 +23,6 @@ let winCondition = {
     eight: "8",
     nine: "9"
 }
-console.log(winCondition['one'])
 
 for (i = 0; i < document.querySelectorAll('button').length; i++)
 {
@@ -32,7 +31,6 @@ for (i = 0; i < document.querySelectorAll('button').length; i++)
         hasBeenClicked(press)
     })
 }
-
 
 let hasBeenClicked = (placement) => {
     this.placement = placement
@@ -81,7 +79,9 @@ let placePiece = (placement) => {
             break;
         default:
             console.log(`${placement}?`)
+            break;
     }
+    
     let peice = document.querySelectorAll('button')[index]
 
     if (turn % 2 === 0){
@@ -135,7 +135,6 @@ let winCheck =() => {
         disabled()
     }  
 }
-
 
 let disabled = () => {
     for(i = 0; i < document.querySelectorAll('button').length; i++){
