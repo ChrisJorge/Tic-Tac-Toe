@@ -33,7 +33,7 @@ for (i = 0; i < document.querySelectorAll('button').length; i++)
     })
 }
 
-let hasBeenClicked = (placement) => {
+const hasBeenClicked = (placement) => {
     this.placement = placement
 
     if(boardCoodinates[`${placement}`] === true){
@@ -46,7 +46,7 @@ let hasBeenClicked = (placement) => {
 
 }
 
-let placePiece = (placement) => {
+const placePiece = (placement) => {
     this.placement = placement
     let index = 0
 
@@ -100,7 +100,7 @@ let placePiece = (placement) => {
     }
 }
 
-let winCheck =() => {
+const winCheck =() => {
 
     if (winCondition['one'] === winCondition['two'] && winCondition['one'] === winCondition['three'])
     {
@@ -158,7 +158,7 @@ let winCheck =() => {
     }  
 }
 
-let disabled = () => {
+const disabled = () => {
     for(i = 0; i < document.querySelectorAll('button').length; i++){
         let btn = document.querySelectorAll('button')[i]
         btn.disabled = true
