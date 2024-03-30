@@ -28,7 +28,8 @@ let winCondition = {
 for (i = 0; i < document.querySelectorAll('button').length; i++)
 {
     document.querySelectorAll('button')[i].addEventListener('click', function(){
-        let press = this.className
+        let press = this.id
+        console.log(press)
         hasBeenClicked(press)
     })
 }
@@ -146,21 +147,33 @@ const winCheck =() => {
     if (won !== true && turn > 8){
         alert('Tie')
         disabled()
-    }
-    else if(won === true){
         let container = document.querySelector('h1');
         btn = document.createElement('button');
         btn.setAttribute('class', 'show-btn');
         btn.setAttribute('onClick', 'reset()');
         btn.textContent = "Replay"
         container.appendChild(btn);
+        
+    }
+    else if(won === true){
         disabled()
+        let container = document.querySelector('h1');
+        btn = document.createElement('button');
+        btn.setAttribute('class', 'show-btn');
+        btn.setAttribute('onClick', 'reset()');
+        btn.textContent = "Replay"
+        container.appendChild(btn);
+        
     }  
 }
 
 const disabled = () => {
-    for(i = 0; i < document.querySelectorAll('button').length; i++){
-        let btn = document.querySelectorAll('button')[i]
+    for(i = 0; i < document.querySelectorAll('btn').length; i++){
+        let btn = document.querySelectorAll('btn')[i]
         btn.disabled = true
     }
+}
+
+const reset = () => {
+    window.location.reload()
 }
