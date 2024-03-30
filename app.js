@@ -148,6 +148,12 @@ let winCheck =() => {
         disabled()
     }
     else if(won === true){
+        let container = document.querySelector('h1');
+        btn = document.createElement('button');
+        btn.setAttribute('class', 'show-btn');
+        btn.setAttribute('onClick', 'reset()');
+        btn.textContent = "Replay"
+        container.appendChild(btn);
         disabled()
     }  
 }
