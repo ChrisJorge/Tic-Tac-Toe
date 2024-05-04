@@ -10,21 +10,31 @@
         <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
     </head>
     <body>
-        
-        <h1 class="title">Tic-Tac-Toe</h1>
-        <div class="boardContainer">
-            <div class="board">
-                <button id="one" class = "btn"></button>
-                <button id="two"  class = "btn"></button>
-                <button id="three"  class = "btn"></button>
-                <button id="four"  class = "btn"></button>
-                <button id="five"  class = "btn"></button>
-                <button id="six"  class = "btn"></button>
-                <button id="seven"  class = "btn"></button>
-                <button id="eight"  class = "btn"></button>
-                <button id="nine"  class = "btn"></button>
+        <div class="options">
+            <h1 class="title">Tic-Tac-Toe</h1>
+            <div class="optionsChoice">
+                <button class="option" onclick="single()">Single Player</button>
+                <button class="option" onclick="double()">Two Player</button>
             </div>
         </div>
+        
+        <div class="game">
+            <h1 class="title">Tic-Tac-Toe</h1>
+            <div class="boardContainer">
+                <div class="board">
+                    <button id="one" class = "btn"></button>
+                    <button id="two"  class = "btn"></button>
+                    <button id="three"  class = "btn"></button>
+                    <button id="four"  class = "btn"></button>
+                    <button id="five"  class = "btn"></button>
+                    <button id="six"  class = "btn"></button>
+                    <button id="seven"  class = "btn"></button>
+                    <button id="eight"  class = "btn"></button>
+                    <button id="nine"  class = "btn"></button>
+                </div>
+            </div>
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
         <script src="./app.js" async defer></script>
     </body>
 </html>

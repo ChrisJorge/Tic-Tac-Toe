@@ -2,6 +2,22 @@
 body{
     background-color: black;
 }
+
+.game{
+    display: none;
+}
+
+.option{
+    margin: 25px;
+    font-size: 65px;
+}
+.optionsChoice{
+    margin-top: 10%;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    
+}
 .title{
     text-align: center;
     font-size: 50px;
