@@ -25,6 +25,7 @@ let winCondition = {
     nine: "9"
 }
 
+let announcement = document.querySelector('.title');
 for (i = 0; i < document.querySelectorAll('button').length; i++)
 {
     document.querySelectorAll('button')[i].addEventListener('click', function(){
@@ -105,42 +106,42 @@ const winCheck =() => {
 
     if (winCondition['one'] === winCondition['two'] && winCondition['one'] === winCondition['three'])
     {
-        alert(`${winCondition['one']} wins`);
+        announcement.innerHTML = `${winCondition['one']} wins!`
         won = true;
     }
     else if(winCondition['four'] === winCondition['five'] && winCondition['four'] === winCondition['six'])
     {
-        alert(`${winCondition['four']} wins`);
+        announcement.innerHTML = `${winCondition['four']} wins!`
         won = true;
     }
     else if(winCondition['seven'] === winCondition['eight'] && winCondition['seven'] === winCondition['nine'])
     {
-        alert(`${winCondition['seven']} wins`);
+        announcement.innerHTML = `${winCondition['seven']} wins!`
         won = true;
     }
     else if(winCondition['one'] === winCondition['five'] && winCondition['one'] === winCondition['nine'])
     {
-        alert(`${winCondition['one']} wins`);
+        announcement.innerHTML = `${winCondition['one']} wins!`
         won = true;
     }
     else if(winCondition['three'] === winCondition['five'] && winCondition['three'] === winCondition['seven'])
     {
-        alert(`${winCondition['three']} wins`);
+        announcement.innerHTML = `${winCondition['three']} wins!`
         won = true;
     }
     else if(winCondition['one'] === winCondition['four'] && winCondition['one'] === winCondition['seven'])
     {
-        alert(`${winCondition['one']} wins`);
+        announcement.innerHTML = `${winCondition['one']} wins!`
         won = true;
     }
     else if(winCondition['two'] === winCondition['five'] && winCondition['two'] === winCondition['eight'])
     {
-        alert(`${winCondition['two']} wins`);
+        announcement.innerHTML = `${winCondition['two']} wins!`
         won = true;
     }
     else if(winCondition['three'] === winCondition['six'] && winCondition['three'] === winCondition['nine'])
     {
-        alert(`${winCondition['three']} wins`);
+        announcement.innerHTML = `${winCondition['three']} wins!`
         won = true;
     }
 

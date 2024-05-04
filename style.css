@@ -1,6 +1,12 @@
+
+body{
+    background-color: black;
+}
 .title{
     text-align: center;
     font-size: 50px;
+    font-family: 'Press Start 2P', cursive;
+    color: white;
 }
 
 .boardContainer{
@@ -21,8 +27,9 @@
 }
 
 button{
-    background-color: white;
-    color: red;
+    background-color: black;
+    border: solid white 5px;
+    color: Yellow;
     font-size: 40px;
 }
 
