@@ -6,3 +6,7 @@ A browser-based Tic-Tac-Toe game where two players compete and try to be the fir
   <li>CSS</li>
   <li>JavaScript</li>
 </ul>
+<h1>Link</h1>
+<ul>
+  <li> https://chrisjorge.github.io/Tic-Tac-Toe/</li>
+</ul>
