@@ -1,35 +1,59 @@
-
-body{
-    background-color: black;
+/* Title CSS */
+.titleContainer{
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
 }
 
-.game{
+.title{
+    font-family: 'Press Start 2P', cursive;
+}
+
+.button{
+    font-size: 20px;
+    margin: .5em;
+    border: solid black;
+    background-color: rgba(0, 0, 0, 0);
+    border-radius: 10%;
     display: none;
 }
 
-.option{
-    margin: 25px;
-    font-size: 65px;
-}
-.optionsChoice{
-    margin-top: 10%;
+/* Options CSS */
+.optionsMasterContainer{
+    margin-top: 35px;
     display: flex;
     width: 100%;
+    height: 50vh;
     justify-content: center;
-    
-}
-.title, .title2{
-    text-align: center;
-    font-size: 50px;
-    font-family: 'Press Start 2P', cursive;
-    color: white;
 }
 
-.boardContainer{
+.optionsContainer{
+    display: flex;
+    width: 80%;
+    justify-content: space-evenly;
+}
+
+.choice{
+    border: solid black 5px;
+    width: 40%;
+    border-radius: 10%;
     display: flex;
     justify-content: center;
+    align-items: center;
+}
+
+.choice:hover, .button:hover, .btn:hover{
+    background-color: gray;
+}
+.choiceText{
+    font-family: 'Press Start 2P', cursive;;
+}
+
+/* Board CSS */
+.gameContainer{
+    display: none;
+    justify-content: center;
     margin: 1em;
-    
 }
 
 .board{
@@ -37,19 +61,18 @@ body{
     border: solid black 3px;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
-    width: 80%;
+    width: 100%;
     height: 70vh;
-  
 }
 
-button{
-    background-color: black;
-    border: solid white 5px;
-    color: Yellow;
-    font-size: 40px;
+.btn
+{
+    color: black;
+    font-size: 35px;
+    background-color: white;
+    border: solid black 3px;
 }
 
-
-.show-btn{
-    margin-left: 15px
+.btn:disabled{
+    border: solid black 3px;
 }
