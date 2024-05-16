@@ -177,10 +177,20 @@ const winCheck = () => {
         if (won !== true && turn > 8)
         {
             announcement('Tie')
+            for(i = 0; i < document.querySelectorAll('.btn').length; i++)
+                {
+                    let btn = document.querySelectorAll('.btn')[i]
+                    btn.disabled = true
+                }
             placeButtons()
         }
         else if (won === true)
             {
+                for(i = 0; i < document.querySelectorAll('.btn').length; i++)
+                    {
+                        let btn = document.querySelectorAll('.btn')[i]
+                        btn.disabled = true
+                    }
                 placeButtons()
             }
 }
